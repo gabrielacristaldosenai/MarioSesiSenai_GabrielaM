@@ -5,7 +5,7 @@
 }
 body{
     background-color: #111422;
-    font-family: "Press Start 2P", system-ui;
+    font-family: "Press Start 2P", system-ui; /*'Poppins', 'Segoe UI', Tahoma, sans-serif;*/
     color: #ffffff;
     min-height: 100vh;
     display: flex;
@@ -15,12 +15,12 @@ body{
     overflow-x: hidden;
     user-select: none;
 }
-.gameContainer{
+.game-container{
     width: 100%;
     max-width: 900px;
     padding: 10px;
 }
-.gameBoard{
+.game-board{
     width: 100%;
     height: 480px;
     border-left: 4px solid #333;
@@ -49,10 +49,10 @@ body{
     top: 30px;
     right: -550px;
 }
-.gameBoard.running .pipe{
+.game-board.running .pipe{
     animation: pipe-animation 1.6s infinite linear;
 }
-.gameBoard.running .clouds{
+.game-board.running .clouds{
     animation: clouds-animation 18s infinite linear;
 }
 .jump{
@@ -88,7 +88,7 @@ body{
         right: 100%;
     }
 }
-.modalOverlay{
+.moda-overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -101,10 +101,10 @@ body{
     z-index: 100;
     padding: 20px;
 }
-.modalOverlay.active{
+.modal-overlay.active{
     display: flex;
 }
-.modalCard{
+.modal-card{
     background: #1f2438;
     border: 4px solid #e52521;
     border-radius: 16px;
@@ -113,12 +113,12 @@ body{
     max-width: 480px;
     text-align: center;
 }
-.startForm{
+.start-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.inputGroup input{
+.input-group input{
     width: 100%;
     padding: 14px 18px;
 }
